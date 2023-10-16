@@ -351,5 +351,5 @@ Returns false if its single operand that can be converted to true; otherwise, re
 
 ```javascript
 !true; // false
-!false; // true
+!false; // true.
 ```
