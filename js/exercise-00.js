@@ -8,19 +8,17 @@
 
    Log out each variable to the terminal at the end.
 */
-// Constant String
-const myString = "Hello, World";
 
-// Constant Number
-const myNumber = 42;
+//create the const variable:
 
-// Constant Boolean
+const myString = "Lore Ipsum";
+
+const myNumber = 13;
+
 const myBoolean = true;
 
-// Constant Null
 const myNull = null;
 
-// Constant Undefined
 const myUndefined = undefined;
 
 // Log the variables to the terminal
