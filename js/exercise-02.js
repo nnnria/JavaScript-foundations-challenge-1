@@ -28,3 +28,4 @@ console.log(nuria);
 //The difference between let and const is that let allows subsequent assignments 
 //and does not require an initial value in the declaration, while const requires 
 //an initial value in the declaration and does not allow subsequent reassignments.
+
