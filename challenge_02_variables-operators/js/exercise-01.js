@@ -34,4 +34,3 @@ updateValue(28);
 
 // Log 'name' value
 console.log(name); // Output: 28
-
