@@ -7,12 +7,17 @@
 
     HINT: modulus operator ( % ) is your friend
 */
-const number = 7;
-let modul;
-modul = number % 2;
+let number = 7;
 
-if (module == 0) {
-  console.log("Your number it's even! Module is 0.");
+if (number % 2 == 0) {
+  console.log("Your number is even! Module is 0.");
 } else {
-  console.log("Your number it's odd! Module is " + modul);
+  console.log("Your number is odd! Module is ");
+}
+
+number = 2;
+if (number % 2 == 0) {
+  console.log("Your number is even! Module is 0.");
+} else {
+  console.log("Your number is odd! Module is ");
 }

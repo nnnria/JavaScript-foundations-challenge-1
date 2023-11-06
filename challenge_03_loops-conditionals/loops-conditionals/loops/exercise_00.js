@@ -5,11 +5,16 @@
 */
 
 //exercise 1.
-for (let i = 10; i <= 40; i += 2) {
-  console.log(i);
+
+for (let number = 10; number <= 40; number++) {
+  if (number % 2 === 0) {
+    console.log(number);
+  }
 }
 
 //exercise 2.
-for (let i = 11; i <= 40; i += 2) {
-  console.log(i);
+for (let number = 11; number <= 40; number++) {
+  if (number % 2 !== 0) {
+    console.log(number);
+  }
 }

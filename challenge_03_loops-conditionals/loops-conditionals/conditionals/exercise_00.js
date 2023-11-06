@@ -9,7 +9,7 @@
     8. Change animal to different values to make sure it works in all cases
 */
 console.log("--- Animal Checker Program ---");
-const animal = "cat";
+let animal = "cat";
 if (animal == "cat") {
   console.log("Meow!");
 } else if (animal == "dog") {
@@ -17,4 +17,23 @@ if (animal == "cat") {
 } else {
   console.log("Must be an alien");
 }
-console.log("--- Animal check complete ---");
+
+console.log("--- Animal Checker Program ---");
+animal = "dog";
+if (animal == "cat") {
+  console.log("Meow!");
+} else if (animal == "dog") {
+  console.log("Woof!");
+} else {
+  console.log("Must be an alien");
+}
+
+console.log("--- Animal Checker Program ---");
+animal = "snake";
+if (animal == "cat") {
+  console.log("Meow!");
+} else if (animal == "dog") {
+  console.log("Woof!");
+} else {
+  console.log("Must be an alien");
+}
