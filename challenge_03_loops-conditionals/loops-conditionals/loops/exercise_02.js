@@ -18,26 +18,17 @@
     You made it!
     All, done!
 */
-for (let number = 1;; number <= 100; number++) {
-  if (number == 10) {
-    console.log("checkpoint! " + number);
-  } else if (number == 20) {
-    console.log("checkpoint! " + number);
-  } else if (number == 30) {
-    console.log("checkpoint! " + number);
-  } else if (number == 40) {
-    console.log("checkpoint! " + number);
-  } else if (number == 50) {
-    console.log("Half way there!");
-  } else if (number == 60) {
-    console.log("checkpoint! " + number);
-  } else if (number == 70) {
-    console.log("checkpoint! " + number);
-  } else if (number == 80) {
-    console.log("checkpoint! " + number);
-  } else if (number == 90) {
-    console.log("checkpoint! " + number);
-  } else if (number == 100) {
-    console.log("You made it!!");
+const printCheckpoints = () => {
+  for (let number = 1; number <= 100; number++) {
+    if (number === 100) {
+      console.log("You made it!!");
+    } else if (number === 50) {
+      console.log("Half way there!");
+    } else if (number % 10 === 0 && number % 50 !== 0) {
+      console.log("checkpoint! " + number);
+    }
   }
-}
+};
+
+printCheckpoints();
+

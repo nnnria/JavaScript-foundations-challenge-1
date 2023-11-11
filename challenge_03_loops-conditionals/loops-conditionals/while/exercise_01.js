@@ -4,20 +4,36 @@
     2. Create a while loop that will print out all the odd numbers between 10 and 40.
 */
 
-let evenNumber = 10;
+const printEvenNumbers = function (start, end) {
+  let evenNumber = start;
 
-while (evenNumber <= 40) {
-  if (evenNumber % 2 == 0) {
-    console.log(evenNumber);
+  while (evenNumber <= end) {
+    if (evenNumber % 2 === 0) {
+      console.log(evenNumber);
+    }
+    evenNumber++;
   }
-  evenNumber++;
-}
+};
 
-let oddNumber = 11;
+const printOddNumbers = function (start, end) {
+  let oddNumber = start;
 
-while (oddNumber <= 40) {
-  if (oddNumber % 2 != 0) {
-    console.log(oddNumber);
+  while (oddNumber <= end) {
+    if (oddNumber % 2 !== 0) {
+      console.log(oddNumber);
+    }
+    oddNumber++;
   }
-  oddNumber++;
-}
+};
+
+console.log("-Even Numbers-");
+printEvenNumbers(10, 40);
+
+console.log("-Odd Numbers-");
+printOddNumbers(11, 40);
+
+const evenNumbersFunction = printEvenNumbers;
+const oddNumbersFunction = printOddNumbers;
+
+evenNumbersFunction(10, 40);
+oddNumbersFunction(11, 40);

@@ -3,7 +3,7 @@
    Should print: "Most places consider you an adult."... but it doesn't, why?
 
    Add a comment explaining what is happenning and how to fix it
-*/
+
 const age = 20;
 
 if (age < 3) {
@@ -17,7 +17,7 @@ if (age < 3) {
 } else {
   console.log("What? How did this happen!?");
 }
-/*This program has a bug in the main code. First of all, if we follow the code
+This program has a bug in the main code. First of all, if we follow the code
 as we got it and we know that JS is a language that executes sequentially.
 So, when our variable 'age' enters the first conditional that fits it, 
 it will exit the program; that's why if you execute it on your console 
@@ -38,3 +38,26 @@ if (age < 3) {
   console.log("What? How did this happen!?");
 }
 */
+let message;
+let userAge = 20;
+
+const howOldAreYou = function (age) {
+  if (typeof age !== "number") {
+    return "What? How did this happen!?";
+  }
+  if (age >= 18) {
+    return "Most places consider you an adult.";
+  }
+  if (age >= 13) {
+    return "Nice, you're a teenager!";
+  }
+  if (age >= 3) {
+    return "You are in elementary school, kid.";
+  } else {
+    return "You're just a baby!";
+  }
+};
+
+message = howOldAreYou(userAge);
+
+console.log(message);
