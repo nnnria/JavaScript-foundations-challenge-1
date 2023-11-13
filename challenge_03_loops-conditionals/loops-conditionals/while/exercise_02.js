@@ -34,9 +34,11 @@ const checkpointFunction = function () {
       number == 90
     ) {
       console.log("Checkpoint! " + number);
-    } if (number == 50) {
+    }
+    if (number == 50) {
       console.log("Halfway there!");
-    } if (number == 100) {
+    }
+    if (number == 100) {
       console.log("You made it!!");
     }
     number++;
