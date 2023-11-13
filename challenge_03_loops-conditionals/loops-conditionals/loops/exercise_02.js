@@ -22,9 +22,9 @@ const printCheckpoints = () => {
   for (let number = 1; number <= 100; number++) {
     if (number === 100) {
       console.log("You made it!!");
-    } else if (number === 50) {
+    }  if (number === 50) {
       console.log("Half way there!");
-    } else if (number % 10 === 0 && number % 50 !== 0) {
+    }  if (number % 10 === 0 && number % 50 !== 0) {
       console.log("checkpoint! " + number);
     }
   }

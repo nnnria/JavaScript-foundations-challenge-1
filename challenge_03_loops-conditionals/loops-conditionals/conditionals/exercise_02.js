@@ -39,23 +39,32 @@ if (age < 3) {
 }
 */
 let message;
-let userAge = 20;
+
+let userAge = 2;
 
 const howOldAreYou = function (age) {
+
   if (typeof age !== "number") {
+
     return "What? How did this happen!?";
   }
+  
   if (age >= 18) {
+
     return "Most places consider you an adult.";
   }
+  
   if (age >= 13) {
+
     return "Nice, you're a teenager!";
   }
+  
   if (age >= 3) {
+    
     return "You are in elementary school, kid.";
-  } else {
-    return "You're just a baby!";
   }
+  
+  return "You're just a baby!";
 };
 
 message = howOldAreYou(userAge);
